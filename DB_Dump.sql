@@ -57,13 +57,14 @@ CREATE TABLE `user` (
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 
 INSERT INTO `user` (`user_id`, `active`, `email`, `last_name`, `name`, `password`)
 VALUES
-	(1,1,'admin@gmail.com','s','Sam','sam'),
-	(2,1,'admin@gmail.com','s','youtube','youtube');
+	(1,1,'lukasz@gmail.com','x','admin','admin'),
+	(2,1,'marek@gmail.com','x','user','user');
 
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
